@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page 2(Community) - Figma</title>
+    <link rel="shortcut icon" href="image/logo_icon.webp" type="image/x-icon" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&
+      family=League+Spartan:wght@100..900&family=Lobster&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&
+    family=League+Spartan:wght@100..900&family=Lobster&family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Lobster&family=Righteous&family=Rowdies:wght@300;400;700&
+    family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Lobster&family=Righteous&family=Rowdies:wght@300;400;700&
+    family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Tailwind Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-section": "url('/image/hero-pattern.png')",
+              "hero-eclipseblur": "url('/image/hero-eclipseblur.png')",
+            },
+            colors: {
+              lightwhite: "#d8d7d7",
+              darkpurple: "#2E08C7",
+              lightpurple: "#7E08C7",
+              darkblue: "#083F9B",
+              purple: "#7F56D9",
+              white: "#fff",
+              lightwhite: "#cee9ed",
+              lightblue: "#0094E7",
+              blue: "#4883FF",
+              paleblue: "#95baf5",
+            },
+            fontFamily: {
+              righteous: ["Righteous", "sans-serif"],
+              saira: ["Saira", "sans-serif"],
+              rowdies: ["Rowdies", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+            fontSize: {
+              xs: "0.75rem",
+              // xs:12px,sm:14px
+              sm: "0.0875rem",
+              base: "1rem",
+              // base:16px
+              lg: "1.125rem",
+              // lg:18px
+              xl: "1.25rem",
+              // xl-20px,2xl-24px
+              "2xl": "1.5rem",
+              "4xl": " 2.25rem",
+              "5xl": "3rem",
+              // 4xl-36px, 5xl-48px
+              "7xl": "4.25rem",
+              "6xl": "3.75rem",
+              // 7xl-72px, 6xl-60px
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black w-full">
+    <header class="w-full">
+      <h3 class="text-slate-400 mx-4">Desktop - 4</h3>
+      <div class="flex justify-around items-center bg-white mx-4 h-24">
+        <div>
+          <img
+            src="image/Askmeidentity 2.png"
+            alt="logo_icon"
+            class="w-40 h-24 top-6 absolute left-12"
+          />
+        </div>
+
+        <div class="flex items-center mx-8">
+          <div
+            class="hidden md:hidden lg:flex justify-center mx-16 font-normal text-xl font-light font-righteous"
+          >
+            <a href="#" class="mx-4">Home</a>
+            <a href="#" class="mx-4">About</a>
+            <a href="#" class="mx-4">Course</a>
+            <a href="#" class="mx-4">Contact</a>
+          </div>
+
+          <img src="image/Group 1.png" alt="" class="hidden sm:mr-12" />
+
+          <div class="hidden sm:hidden md:flex gap-6">
+            <button class="bg-transparent font-saira text-xl">Login</button>
+            <button
+              class="bg-gradient-to-r from-darkblue to-purple text-white py-2 px-4 font-saira text-xl rounded-lg"
+            >
+              Signup
+            </button>
+          </div>
+          <div id="menubar" class="mx-16 text-xl lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full">
+      <!-- Hero Section Started -->
+      <div
+        class="mx-4 z-1 bg-[url('/image/hero-pattern.png')] bg-cover bg-center"
+      >
+        <div class="flex flex-wrap justify-center items-center">
+          <!-- 1st part -->
+          <div>
+            <div>
+              <div class="flex flex-col pt-28">
+                <p
+                  class="font-righteous text-white tracking-wide text-xs leading-3 md:text-lg leading-5 mx-16 py-2 pb-8"
+                >
+                  SUCCESSFUL COACHES ARE VISIONARIES
+                </p>
+                <p
+                  class="font-righteous text-white text-xl pb-2 md:text-7xl leading-3 md:leading-10 ml-14 pb-8"
+                >
+                  Good <span class="text-darkblue">coaching</span> is
+                </p>
+                <p
+                  class="font-righteous text-xl pb-2 text-xl md:text-7xl text-white leading-3 md:leading-10 ml-14 pb-8"
+                >
+                  good teaching &
+                </p>
+                <p
+                  class="font-righteous text-white text-xl pb-2 text-xl md:text-7xl leading-3 md:leading-10 ml-14 pb-8"
+                >
+                  nothing else.
+                </p>
+              </div>
+              <div class="flex gap-6 mx-8 py-4 md:mx-16 py-10">
+                <button
+                  class="bg-transparent border rounded-lg text-white px-2 py-1 font-righteous text-xs leading-1 md:text-lg leading-7 px-6 py-2 tracking-tighter lg:text-lg leading-7 px-6 py-2 tracking-tighter"
+                >
+                  View Courses
+                </button>
+                <button
+                  class="bg-none text-white font-righteous text-xs leading-1 md:text-lg leading-10 lg:text-lg leading-10"
+                >
+                  Get Free Consultation
+                </button>
+              </div>
+              <div class="flex bg-white rounded py-2 mx-4 md:mx-16 relative">
+                <input
+                  type="text"
+                  placeholder="What do you want to learn today?"
+                  class="py-2 mx-2"
+                />
+                <div class="absolute end-3">
+                  <button
+                    class="flex items-center bg-darkblue rounded px-4 py-2 text-white"
+                  >
+                    <img src="image/Vector (11).png" alt="" class="px-2" />
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd part -->
+
+          <div class="flex justify-center items-center mx-16">
+            <div
+              class="flex w-6 h-36 flex-col mx-8 justify-center items-center"
+            >
+              <img src="image/pseudo.png" alt="line image" />
+              <button
+                class="bg-[url('/image/ellipsedot.png')] px-4 py-1 bg-center bg-no-repeat text-center"
+              >
+                "
+              </button>
+              <img src="image/pseudo.png" alt="line image" />
+            </div>
+            <div class="flex flex-col">
+              <h3
+                class="font-rowdies text-xs md:text-base text-white leading-5 py-4"
+              >
+                Shyam
+              </h3>
+              <p
+                class="font-rowdies text-white text-xs leading-1 md:text-base leading-6 w-56 lg:text-base leading-6 w-56"
+              >
+                In a coaching role, you ask the questions and rely more on your
+                staff, who become the experts, to provide the information.
+              </p>
+              <p
+                class="font-inter font-light text-xs md:font-bold text-lightblue"
+              >
+                4.9
+              </p>
+            </div>
+          </div>
+
+          <!-- 3rd section -->
+          <div
+            class="bg-[url('/image/eclipseblur.png')] bg-cover bg-center rounded"
+          >
+            <img
+              src="image/hero-laptop.png"
+              alt="laptop image"
+              class="rounded-full"
+            />
+          </div>
+        </div>
+        <!-- road image -->
+        <div class="flex justify-center">
+          <div
+            class="flex justify-center items-center bg-[url('/image/rectanglebig.png')] bg-center py-8 w-3/12"
+          >
+            <span class="bg-[url('/image/rectangledot.png')] bg-center">
+              <img src="image/rectanglesmall.png" alt="" class="" />
+            </span>
+          </div>
+        </div>
+        <!-- header bottom -->
+        <div
+          class="flex flex-wrap w-full bg-gradient-to-r from-darkpurple via-darkblue via-darkpurple via-lightpurple via-darkpurple via-lightwhite via-darkpurple via-lightpurple via-darkpurple to-darkpurple"
+        >
+          <div class="flex flex-wrap justify-center items-center mx-1 md:mx-16">
+            <img src="image/spotifylink.png" alt="" class="py-4 mx-8" />
+            <img src="image/amazon.png" alt="" class="py-4 mx-8" />
+            <img src="image/spotifylink.png" alt="" class="py-4 mx-8" />
+            <img src="image/cisco.png" alt="" class="py-4 mx-8" />
+            <img src="image/logitech.png" alt="" class="py-4 mx-8" />
+            <img src="image/amazon.png" alt="" class="py-4 mx-8" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Course bg-[url('/image/rectangleFeature.png')] -->
+      <div class="mx-4 bg-lightwhite bg-cover">
+       
+        <div class="flex justify-center items-center ">
+        
+          <img src="image/eclipsetransblue.png" alt="" class="hidden md:absolute left-32">
+        <div class="flex  flex-col justify-center items-center py-12">
+          <p
+            class="font-rowdies h-11 leading-10 text-black text-2xl md:text-4xl"
+          >
+            Featured <span class="text-blue">Course</span>
+          </p>
+          <p class="font-righteous h-6 leading-6 text-lg md:text-2xl text-center">
+            The feature courses are we invented our teaching part
+          </p></div>
+        </div>
+        <div class="flex flex-wrap justify-center items-center py-16">
+          <div class="flex flex-col rounded-lg bg-white mx-4 mb-8 w-96">
+            <img src="image/gpspin.png" alt="gps image" class="rounded" />
+            <div class="mx-4">
+              <div class="flex justify-between">
+                <p class="font-saira text-xs leading-8">1,957 Students</p>
+                <p class="font-saira text-xs leading-8">01h 59m</p>
+              </div>
+              <div class="flex">
+                <p
+                  class="font-saira text-lg md:text-2xl font-semibold leading-8"
+                >
+                  Motion Graphics: Create a Nice Typography Animation
+                </p>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="font-saira text-base md:text-xl font-semibold">
+                  Rs.499
+                </p>
+                <img src="image/cart.png" alt="" class="py-2" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col rounded-lg bg-white mx-4 mb-8 w-96">
+            <img src="image/puzzle.png" alt="puzzle image" class="rounded" />
+            <div class="mx-4">
+              <div class="flex justify-between">
+                <p class="font-saira text-xs leading-8">9,957 Students</p>
+                <p class="font-saira text-xs leading-8">01h 59m</p>
+              </div>
+              <div class="flex">
+                <p
+                  class="font-saira text-lg md:text-2xl font-semibold leading-8"
+                >
+                  Advance PHP knowledge with JS to make smart web
+                </p>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="font-saira text-base md:text-xl font-semibold">
+                  Rs.499
+                </p>
+                <img src="image/cart.png" alt="" class="py-2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg bg-white mx-4 mb-8 w-96">
+            <img
+              src="image/rocketlaunch.png"
+              alt="rocket image"
+              class="rounded"
+            />
+            <div class="mx-4">
+              <div class="flex justify-between">
+                <p class="font-saira text-xs leading-8">2957 Students</p>
+                <p class="font-saira text-xs leading-8">02h 49m</p>
+              </div>
+              <div class="flex">
+                <p
+                  class="font-saira text-lg md:text-2xl font-semibold leading-8"
+                >
+                  Education Software and PHP and JS System Script
+                </p>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="font-saira text-base md:text-xl font-semibold">
+                  Rs.499
+                </p>
+                <img src="image/cart.png" alt="" class="py-2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg bg-white mx-4 mb-8 w-96">
+            <img src="image/finance.png" alt="" class="rounded" />
+            <div class="mx-4">
+              <div class="flex justify-between">
+                <p class="font-saira text-xs leading-8">5,457 Students</p>
+                <p class="font-saira text-xs leading-8">01h 49m</p>
+              </div>
+              <div class="flex">
+                <p
+                  class="font-saira text-lg md:text-2xl font-semibold leading-8"
+                >
+                  The Complete Financial Analyst Training & Investing
+                </p>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="font-saira text-base md:text-xl font-semibold">
+                  Rs.499
+                </p>
+                <img src="image/cart.png" alt="" class="py-2" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col rounded-lg bg-white mx-4 mb-8 w-96">
+            <img src="image/aeroplane.png" alt="" class="rounded" />
+            <div class="mx-4">
+              <div class="flex justify-between">
+                <p class="font-saira text-xs leading-8">595 Students</p>
+                <p class="font-saira text-xs leading-8">01h 49m</p>
+              </div>
+              <div class="flex">
+                <p
+                  class="font-saira text-lg md:text-2xl font-semibold leading-8"
+                >
+                  Marketing 2023: Complete Guide To Instagram Growth
+                </p>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="font-saira text-base md:text-xl font-semibold">
+                  Rs.499
+                </p>
+                <img src="image/cart.png" alt="" class="py-2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg bg-white mx-4 mb-8 w-96">
+            <img src="image/banking.png" alt="" class="rounded" />
+            <div class="mx-4">
+              <div class="flex justify-between">
+                <p class="font-saira text-xs leading-8">458 Students</p>
+                <p class="font-saira text-xs leading-8">03h 00m</p>
+              </div>
+              <div class="flex">
+                <p
+                  class="font-saira text-lg md:text-2xl font-semibold leading-8"
+                >
+                  Learn 3D Modelling and Design for Beginners
+                </p>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="font-saira text-base md:text-xl font-semibold">
+                  Rs.499
+                </p>
+                <img src="image/cart.png" alt="" class="py-2" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <button
+            class="font-righteous font-normal text-xl bg-gradient-to-r from-darkblue to-purple rounded-lg mb-4 md:mb-16 px-4 py-2"
+          >
+            Explore Courses
+          </button>
+        </div>
+      </div>
+
+      <!-- Why Learn section -->
+      <div
+        class="mx-4 bg-gradient-to-r from-lightblue via- via-darkblue to-darkblue"
+      >
+        <div
+          class="py-16 mx-2 flex flex-col flex-wrap justify-start md:justify-center items-center"
+        >
+          <p class="font-righteous font-normal text-white text-4xl leading-10 text-center">
+            Why<span class="text-darkblue"> learn </span>with our courses?
+          </p>
+          <p class="font-saira font-normal text-xl leading-8 text-white py-2 text-center">
+            We are providing the best courses and top classes.And extradinery
+            placement training.....
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center items-center py-8 pb-16">
+          <!-- flex1 -->
+          <div class="flex flex-col justify-center items-center mx-16">
+            <img src="image/learnVector.png" alt="learn image" class="w-40" />
+
+            <p class="font-righteous text-white font-normal text-xl leading-7">
+              01. Learn
+            </p>
+            <p class="font-righteous text-white font-normal text-lg leading-6">
+              Learn continually. There is always
+            </p>
+            <p class="font-righteous text-white font-normal text-lg leading-6">
+              “one more thing”to learn.
+            </p>
+          </div>
+          <!-- 2nd flex -->
+          <img src="image/dottedLine.png" alt="" />
+          <!-- 3rd flex -->
+          <div class="flex flex-col justify-center items-center mx-16">
+            <img
+              src="image/graduateVector.png"
+              alt="graduate image"
+              class="w-40"
+            />
+
+            <p class="font-righteous text-white font-normal text-xl leading-7">
+              02. Graduate
+            </p>
+            <p class="font-righteous text-white font-normal text-lg leading-6">
+              Be bold,be courageous,
+            </p>
+            <p class="font-righteous text-white font-normal text-lg leading-6">
+              be your best.
+            </p>
+          </div>
+          <!-- 4th flex -->
+          <div>
+            <img src="image/dottedLine.png" alt="" />
+          </div>
+          <!-- 5th flex -->
+          <div class="flex flex-col justify-center items-center mx-16">
+            <img
+              src="image/workVector.png"
+              alt="workVector image"
+              class="w-40"
+            />
+
+            <p class="font-righteous text-white font-normal text-xl leading-7">
+              03. Work
+            </p>
+            <p class="font-righteous text-white font-normal text-lg leading-6">
+              Great companies are built in
+            </p>
+
+            <p class="font-righteous text-white font-normal text-lg leading-6">
+              the office,with hard work put
+            </p>
+            <p class="font-righteous text-white font-normal text-lg leading-6">
+              in by team.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Categories Section -->
+      <div>
+        <div class="mx-4 bg-lightwhite">
+          <div class="flex flex-col justify-center items-center py-16">
+            <p
+              class="font-righteous font-normal text-black text-4xl leading-10 py-2"
+            >
+              Top <span class="text-blue">Categories</span>
+            </p>
+            <p
+              class="font-righteous font-normal text-black text-2xl leading-7 text-center"
+            >
+              100+ unique online course list designs
+            </p>
+          </div>
+
+          <div class="flex justify-center flex-wrap">
+            <!-- 1st -->
+            <div
+              class="flex flex-col justify-center items-center bg-white py-8 mx-8 mb-8 rounded-lg"
+            >
+              <img src="image/div.features-box-image.png" alt="" />
+              <div class="flex justify-center items-center w-40">
+                <p
+                  class="font-righteous font-normal text-black text-lg leading-7 py-8 mx-8"
+                >
+                  Digital Marketing
+                </p>
+              </div>
+              <p
+                class="font-righteous font-normal text-black text-base leading-5"
+              >
+                25 Courses
+              </p>
+            </div>
+            <!-- 2nd -->
+            <div
+              class="flex flex-col justify-center items-center bg-white py-8 mx-8 mb-8 rounded-lg"
+            >
+              <img src="image/div.features-box-image (1).png" alt="" />
+              <div class="flex justify-center items-center w-40">
+                <p
+                  class="font-righteous font-normal text-black text-lg leading-7 py-8 mx-8"
+                >
+                  Web Development
+                </p>
+              </div>
+              <p
+                class="font-righteous font-normal text-black text-base leading-5"
+              >
+                16 Courses
+              </p>
+            </div>
+            <!-- 3rd -->
+            <div
+              class="flex flex-col justify-center items-center bg-white py-8 mx-8 mb-8 rounded-lg"
+            >
+              <img src="image/div.features-box-image (2).png" alt="" />
+              <div class="flex justify-center items-center w-40">
+                <p
+                  class="font-righteous font-normal text-black text-lg leading-7 py-8 mx-8"
+                >
+                  Art & Humanities
+                </p>
+              </div>
+              <p
+                class="font-righteous font-normal text-black text-base leading-5"
+              >
+                76 Courses
+              </p>
+            </div>
+            <!-- 4th -->
+            <div
+              class="flex flex-col justify-center items-center bg-white py-8 mx-8 mb-8 rounded-lg"
+            >
+              <img src="image/div.features-box-image (3).png" alt="" />
+              <div class="flex justify-center items-center w-40">
+                <p
+                  class="font-righteous font-normal text-black text-lg leading-7 py-8 mx-8"
+                >
+                  Personal Development
+                </p>
+              </div>
+              <p
+                class="font-righteous font-normal text-black text-base leading-5"
+              >
+                22 Courses
+              </p>
+            </div>
+            <!-- 5th -->
+            <div
+              class="flex flex-col justify-center items-center bg-white py-8 mx-8 mb-8 rounded-lg"
+            >
+              <img src="image/div.features-box-image (4).png" alt="" />
+              <div class="flex justify-center items-center w-40">
+                <p
+                  class="font-righteous font-normal text-black text-lg leading-7 py-8 mx-8"
+                >
+                  IT and Software
+                </p>
+              </div>
+              <p
+                class="font-righteous font-normal text-black text-base leading-5"
+              >
+                110 Courses
+              </p>
+            </div>
+            <!-- 6th -->
+            <div
+              class="flex flex-col justify-center items-center bg-white py-8 mx-8 mb-8 rounded-lg"
+            >
+              <img src="image/div.features-box-image (5).png" alt="" />
+              <div class="flex justify-center items-center w-40">
+                <p
+                  class="font-righteous font-normal text-black text-lg leading-7 py-8 mx-8"
+                >
+                  Graphic Design
+                </p>
+              </div>
+              <p
+                class="font-righteous font-normal text-black text-base leading-5"
+              >
+                85 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <!-- Subscribe section -->
+       <div class="bg-white mx-4">
+        <div class="bg-[ur('/image/subscribebg.png')] h-24">
+
+        </div>
+
+       </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
