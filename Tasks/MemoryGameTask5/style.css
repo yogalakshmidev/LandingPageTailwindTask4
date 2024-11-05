@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Rowdies:wght@300;400;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins","sans-serif";
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6563ff;
+  min-height: 100vh;
+
+}
+.wrapper{
+  height: 400px;
+  width: 400px;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+.cards{
+  flex-wrap: wrap;
+  height:100%;
+  width: 100%;
+  justify-content: space-between;
+}
+.cards .card .view{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card .back-view img{
+  max-width: 45px;
+}
+.cards .card{
+  cursor: pointer;
+  position: relative;
+  height: calc(100% /4 -10px);
+  width: calc(100% /4 -10px);
+}
+.cards .card .view{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+ /*
+.cards .card .view{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: 7px;
+  transition: transform 0.25s linear;
+  box-shadow:0 3px 10px rgba(0, 0, 0, 0.1)  ;
+}  
+.card .front-view{
+  font-size:40px;
+  color:#6563ff;
+}
+.card .back-view{
+  transform: rotateY(-180deg);
+}
+.card .back-view img{
+  max-width: 45px;
+} 
+.card .back-view img{
+  max-width: 45px;
+}
+
+.cards .card .view{
+transform: rotateY(0);
+} */
